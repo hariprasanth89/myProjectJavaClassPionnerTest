@@ -46,7 +46,7 @@ public class Student {
 		
 		//Student student2 = new Student();
 		Student s = student.methods1();
-		System.out.println(s);
+		//System.out.println(s);
 		
 		
 	}

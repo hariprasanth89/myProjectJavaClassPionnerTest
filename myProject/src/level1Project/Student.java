@@ -1,5 +1,7 @@
 package level1Project;
 
+import java.sql.SQLException;
+
 public class Student {
 	
 	int x;
@@ -36,17 +38,32 @@ public class Student {
 	
 	
 	
+	public boolean save() throws SQLException{
 	
-	public static void main(String[] args) {
+		return false;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) throws SQLException {
 		
 		Student student = new Student();
 		//student.add(10, 5);
 		student.f1();
 		
+		student.save();
+		
+		String string = new String("hari");
+		String str1 = string.substring(2);
+		
+		System.out.println(str1);
+		
+		
 		
 		//Student student2 = new Student();
 		Student s = student.methods1();
-		//System.out.println(s);
+		System.out.println(s);
 		
 		
 	}

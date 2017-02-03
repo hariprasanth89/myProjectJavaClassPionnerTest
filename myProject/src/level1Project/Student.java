@@ -57,6 +57,8 @@ public class Student {
 		String string = new String("hari");
 		String str1 = string.substring(2);
 		
+		
+		
 		System.out.println(str1);
 		
 		

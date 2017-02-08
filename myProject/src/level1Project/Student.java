@@ -25,8 +25,8 @@ public class Student {
 	public int multiple(Student s) {
 		
 		int c =0;
-		s.add(5, 5);
-		return c;
+		int muls = s.add(10, 5);
+		return muls;
 	}
 	
 	
@@ -49,13 +49,13 @@ public class Student {
 	public static void main(String[] args) throws SQLException {
 		
 		Student student = new Student();
-		//student.add(10, 5);
+		student.add(10, 5);
 		student.f1();
 		
 		student.save();
 		
 		String string = new String("hari");
-		String str1 = string.substring(2);
+		String str1 = string.substring(0);
 		
 		
 		
@@ -64,9 +64,12 @@ public class Student {
 		
 		
 		//Student student2 = new Student();
+		//student2.methods1();
 		Student s = student.methods1();
-		System.out.println(s);
-		
+		System.out.println("s::::::\n"+s);
+		int a1Result = s.multiple(s);
+		System.out.println("a1Result:::   "+a1Result);
+		System.out.println("mult"+student.multiple(s));
 		
 	}
 	
